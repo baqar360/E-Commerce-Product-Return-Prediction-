@@ -1,0 +1,69 @@
+{
+  "rows": 200000,
+  "columns": 16,
+  "target_share": {
+    "0": 0.525405,
+    "1": 0.474595
+  },
+  "impossible_values": {
+    "price<=0": 27285,
+    "views<0": 21443,
+    "session<0": 1487,
+    "rating>5": 3831
+  },
+  "return_rate_by": {
+    "device_type": {
+      "desktop": 0.5191,
+      "mobile": 0.4512,
+      "tablet": 0.4838
+    },
+    "product_category": {
+      "beauty": 0.4972,
+      "clothing": 0.5305,
+      "electronics": 0.4173,
+      "home": 0.4454,
+      "sports": 0.4504,
+      "toys": 0.5031
+    },
+    "shipping_method": {
+      "express": 0.5322,
+      "same_day": 0.4429,
+      "standard": 0.4551
+    },
+    "payment_method": {
+      "apple_pay": 0.5217,
+      "credit_card": 0.4821,
+      "debit_card": 0.4418,
+      "paypal": 0.4554
+    },
+    "used_coupon": {
+      "0": 0.4399,
+      "1": 0.4963
+    }
+  },
+  "correlation_with_target": {
+    "customer_age": -0.0114,
+    "product_price": 0.0343,
+    "discount_percent": 0.0118,
+    "product_rating": 0.0046,
+    "past_purchase_count": -0.0237,
+    "past_return_rate": 0.018,
+    "delivery_delay_days": -0.0316,
+    "session_length_minutes": -0.0173,
+    "num_product_views": -0.0188,
+    "used_coupon": 0.0549
+  },
+  "final_feature_count": 36,
+  "workflow_steps": [
+    "Raw data",
+    "Cleaning",
+    "Feature engineering",
+    "Train/test split",
+    "Impute + scale + encode",
+    "Baseline",
+    "Model comparison",
+    "Tuning",
+    "Final model + threshold",
+    "Explainability"
+  ]
+}

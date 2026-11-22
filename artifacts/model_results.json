@@ -1,0 +1,333 @@
+{
+  "Logistic Regression": {
+    "kind": "base",
+    "fit_time_sec": 1.26,
+    "cv_roc_auc": 0.5834299363573361,
+    "params": {
+      "C": 1.0,
+      "class_weight": null,
+      "dual": false,
+      "fit_intercept": true,
+      "intercept_scaling": 1,
+      "l1_ratio": 0.0,
+      "max_iter": 1000,
+      "n_jobs": null,
+      "penalty": "deprecated",
+      "random_state": null,
+      "solver": "lbfgs",
+      "tol": 0.0001,
+      "verbose": 0,
+      "warm_start": false
+    },
+    "trained_on_rows": 160000,
+    "train": {
+      "accuracy": 0.565925,
+      "precision": 0.5552506434403177,
+      "recall": 0.4289984855468493,
+      "f1": 0.4840272205877983,
+      "roc_auc": 0.5882788265143843
+    },
+    "test": {
+      "accuracy": 0.56555,
+      "precision": 0.5542787616601325,
+      "recall": 0.43194268857985674,
+      "f1": 0.4855231215584108,
+      "roc_auc": 0.588648672811003
+    },
+    "model_file": "models/logistic_regression.joblib"
+  },
+  "Naive Bayes": {
+    "kind": "base",
+    "fit_time_sec": 0.51,
+    "cv_roc_auc": 0.5768413412594793,
+    "params": {
+      "priors": null,
+      "var_smoothing": 1e-09
+    },
+    "trained_on_rows": 160000,
+    "train": {
+      "accuracy": 0.560125,
+      "precision": 0.5386434782608696,
+      "recall": 0.5098439454796866,
+      "f1": 0.5238481834787904,
+      "roc_auc": 0.5802946371328558
+    },
+    "test": {
+      "accuracy": 0.558225,
+      "precision": 0.5362847510086773,
+      "recall": 0.5111146228402865,
+      "f1": 0.5233972543625428,
+      "roc_auc": 0.5798525506864034
+    },
+    "model_file": "models/naive_bayes.joblib"
+  },
+  "KNN": {
+    "kind": "base",
+    "fit_time_sec": 0.11,
+    "cv_roc_auc": 0.5381680870249641,
+    "params": {
+      "algorithm": "auto",
+      "leaf_size": 30,
+      "metric": "minkowski",
+      "metric_params": null,
+      "n_jobs": null,
+      "n_neighbors": 25,
+      "p": 2,
+      "weights": "uniform"
+    },
+    "trained_on_rows": 40000,
+    "train": {
+      "accuracy": 0.604975,
+      "precision": 0.6003746487667811,
+      "recall": 0.5056268405553218,
+      "f1": 0.5489423653335617,
+      "roc_auc": 0.6423263483518745
+    },
+    "test": {
+      "accuracy": 0.527875,
+      "precision": 0.5030839200049841,
+      "recall": 0.4253581963758955,
+      "f1": 0.46096760382474666,
+      "roc_auc": 0.5350448544030667
+    },
+    "model_file": "models/knn.joblib"
+  },
+  "Decision Tree": {
+    "kind": "base",
+    "fit_time_sec": 5.27,
+    "cv_roc_auc": 0.5635511170503242,
+    "params": {
+      "ccp_alpha": 0.0,
+      "class_weight": null,
+      "criterion": "gini",
+      "max_depth": 6,
+      "max_features": null,
+      "max_leaf_nodes": null,
+      "min_impurity_decrease": 0.0,
+      "min_samples_leaf": 50,
+      "min_samples_split": 2,
+      "min_weight_fraction_leaf": 0.0,
+      "monotonic_cst": null,
+      "random_state": 42,
+      "splitter": "best"
+    },
+    "trained_on_rows": 160000,
+    "train": {
+      "accuracy": 0.56398125,
+      "precision": 0.5608366518156369,
+      "recall": 0.3746493711727135,
+      "f1": 0.44921483329517375,
+      "roc_auc": 0.5852278215937932
+    },
+    "test": {
+      "accuracy": 0.556375,
+      "precision": 0.5490926380854267,
+      "recall": 0.36499157184997894,
+      "f1": 0.4385026737967914,
+      "roc_auc": 0.5752520797771561
+    },
+    "model_file": "models/decision_tree.joblib"
+  },
+  "Random Forest": {
+    "kind": "base",
+    "fit_time_sec": 51.16,
+    "cv_roc_auc": 0.5833455513273464,
+    "params": {
+      "bootstrap": true,
+      "ccp_alpha": 0.0,
+      "class_weight": null,
+      "criterion": "gini",
+      "max_depth": 12,
+      "max_features": "sqrt",
+      "max_leaf_nodes": null,
+      "max_samples": null,
+      "min_impurity_decrease": 0.0,
+      "min_samples_leaf": 20,
+      "min_samples_split": 2,
+      "min_weight_fraction_leaf": 0.0,
+      "monotonic_cst": null,
+      "n_estimators": 100,
+      "n_jobs": -1,
+      "oob_score": false,
+      "random_state": 42,
+      "verbose": 0,
+      "warm_start": false
+    },
+    "trained_on_rows": 160000,
+    "train": {
+      "accuracy": 0.64443125,
+      "precision": 0.6750689464975179,
+      "recall": 0.48353196813063803,
+      "f1": 0.5634682524458086,
+      "roc_auc": 0.7016164119460452
+    },
+    "test": {
+      "accuracy": 0.569975,
+      "precision": 0.5654984938652561,
+      "recall": 0.4054466919511167,
+      "f1": 0.4722810246970394,
+      "roc_auc": 0.5925050672768173
+    },
+    "model_file": "models/random_forest.joblib"
+  },
+  "Hist Gradient Boosting": {
+    "kind": "base",
+    "fit_time_sec": 11.85,
+    "cv_roc_auc": 0.5798759384652292,
+    "params": {
+      "categorical_features": "from_dtype",
+      "class_weight": null,
+      "early_stopping": "auto",
+      "interaction_cst": null,
+      "l2_regularization": 0.0,
+      "learning_rate": 0.1,
+      "loss": "log_loss",
+      "max_bins": 255,
+      "max_depth": null,
+      "max_features": 1.0,
+      "max_iter": 100,
+      "max_leaf_nodes": 31,
+      "min_samples_leaf": 20,
+      "monotonic_cst": null,
+      "n_iter_no_change": 10,
+      "random_state": 42,
+      "scoring": "loss",
+      "tol": 1e-07,
+      "validation_fraction": 0.1,
+      "verbose": 0,
+      "warm_start": false
+    },
+    "trained_on_rows": 160000,
+    "train": {
+      "accuracy": 0.59646875,
+      "precision": 0.5953539080845354,
+      "recall": 0.46743925725949825,
+      "f1": 0.5236988676183099,
+      "roc_auc": 0.6335739404446945
+    },
+    "test": {
+      "accuracy": 0.5691,
+      "precision": 0.5581735889243876,
+      "recall": 0.441740412979351,
+      "f1": 0.4931780757468831,
+      "roc_auc": 0.5929273119382804
+    },
+    "model_file": "models/hist_gradient_boosting.joblib"
+  },
+  "XGBoost": {
+    "kind": "base",
+    "fit_time_sec": 13.64,
+    "cv_roc_auc": 0.587171228745311,
+    "params": {
+      "objective": "binary:logistic",
+      "base_score": null,
+      "booster": null,
+      "callbacks": null,
+      "colsample_bylevel": null,
+      "colsample_bynode": null,
+      "colsample_bytree": 0.8,
+      "device": null,
+      "early_stopping_rounds": null,
+      "enable_categorical": false,
+      "eval_metric": "logloss",
+      "feature_types": null,
+      "feature_weights": null,
+      "gamma": null,
+      "grow_policy": null,
+      "importance_type": null,
+      "interaction_constraints": null,
+      "learning_rate": 0.05,
+      "max_bin": null,
+      "max_cat_threshold": null,
+      "max_cat_to_onehot": null,
+      "max_delta_step": null,
+      "max_depth": 4,
+      "max_leaves": null,
+      "min_child_weight": null,
+      "missing": NaN,
+      "monotone_constraints": null,
+      "multi_strategy": null,
+      "n_estimators": 200,
+      "n_jobs": -1,
+      "num_parallel_tree": null,
+      "random_state": 42,
+      "reg_alpha": null,
+      "reg_lambda": null,
+      "sampling_method": null,
+      "scale_pos_weight": null,
+      "subsample": 0.8,
+      "tree_method": null,
+      "validate_parameters": null,
+      "verbosity": null
+    },
+    "trained_on_rows": 160000,
+    "train": {
+      "accuracy": 0.58245,
+      "precision": 0.5778103633480537,
+      "recall": 0.4462764206229012,
+      "f1": 0.5035962670153956,
+      "roc_auc": 0.6135138098021529
+    },
+    "test": {
+      "accuracy": 0.57015,
+      "precision": 0.5607108940442274,
+      "recall": 0.43541930046354826,
+      "f1": 0.4901856134732847,
+      "roc_auc": 0.5947423107969351
+    },
+    "model_file": "models/xgboost.joblib"
+  },
+  "XGBoost (tuned)": {
+    "kind": "tuned",
+    "fit_time_sec": 20.04,
+    "cv_roc_auc": 0.5890333359784443,
+    "params": {
+      "subsample": 0.7,
+      "n_estimators": 300,
+      "min_child_weight": 10,
+      "max_depth": 3,
+      "learning_rate": 0.02,
+      "colsample_bytree": 1.0
+    },
+    "trained_on_rows": 160000,
+    "train": {
+      "accuracy": 0.57379375,
+      "precision": 0.5712891344383058,
+      "recall": 0.4085204451175347,
+      "f1": 0.47638499635274695,
+      "roc_auc": 0.5994583853496334
+    },
+    "test": {
+      "accuracy": 0.57045,
+      "precision": 0.565987988867731,
+      "recall": 0.40707964601769914,
+      "f1": 0.47355842882529564,
+      "roc_auc": 0.592872306238371
+    },
+    "model_file": "models/xgboost_tuned.joblib"
+  },
+  "Logistic Regression (tuned)": {
+    "kind": "tuned",
+    "fit_time_sec": 0.76,
+    "cv_roc_auc": 0.5835515356951909,
+    "params": {
+      "C": 29.763514416313193
+    },
+    "trained_on_rows": 160000,
+    "train": {
+      "accuracy": 0.5659125,
+      "precision": 0.555231715839171,
+      "recall": 0.4289984855468493,
+      "f1": 0.48402002882486667,
+      "roc_auc": 0.588278891369334
+    },
+    "test": {
+      "accuracy": 0.56555,
+      "precision": 0.5542787616601325,
+      "recall": 0.43194268857985674,
+      "f1": 0.4855231215584108,
+      "roc_auc": 0.5886484021124274
+    },
+    "model_file": "models/logistic_regression_tuned.joblib"
+  }
+}

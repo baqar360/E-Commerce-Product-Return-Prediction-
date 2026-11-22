@@ -1,0 +1,186 @@
+{
+  "permutation": {
+    "shipping_method_express": {
+      "importance": 0.019917,
+      "std": 0.00432
+    },
+    "used_coupon": {
+      "importance": 0.015741,
+      "std": 0.003271
+    },
+    "payment_method_apple_pay": {
+      "importance": 0.009324,
+      "std": 0.002403
+    },
+    "device_type_mobile": {
+      "importance": 0.008538,
+      "std": 0.002029
+    },
+    "product_category_clothing": {
+      "importance": 0.00751,
+      "std": 0.001531
+    },
+    "device_type_desktop": {
+      "importance": 0.004787,
+      "std": 0.002592
+    },
+    "past_purchase_count": {
+      "importance": 0.004555,
+      "std": 0.002256
+    },
+    "product_category_electronics": {
+      "importance": 0.003191,
+      "std": 0.001866
+    },
+    "session_length_minutes": {
+      "importance": 0.002515,
+      "std": 0.000208
+    },
+    "product_category_home": {
+      "importance": 0.00196,
+      "std": 0.000283
+    },
+    "delivery_delay_days": {
+      "importance": 0.001936,
+      "std": 0.002042
+    },
+    "past_return_rate": {
+      "importance": 0.001871,
+      "std": 0.000641
+    },
+    "payment_method_debit_card": {
+      "importance": 0.001845,
+      "std": 0.000283
+    },
+    "num_product_views": {
+      "importance": 0.00079,
+      "std": 0.000581
+    },
+    "product_category_sports": {
+      "importance": 0.000608,
+      "std": 0.000383
+    },
+    "product_price": {
+      "importance": 0.000361,
+      "std": 0.0014
+    },
+    "customer_age": {
+      "importance": 0.00034,
+      "std": 0.000196
+    },
+    "shipping_method_same_day": {
+      "importance": 0.000204,
+      "std": 0.000262
+    },
+    "product_rating": {
+      "importance": 0.000156,
+      "std": 0.000249
+    },
+    "views_per_minute": {
+      "importance": 0.000138,
+      "std": 6.4e-05
+    },
+    "payment_method_paypal": {
+      "importance": 0.000115,
+      "std": 0.000116
+    },
+    "expected_returns": {
+      "importance": 0.000103,
+      "std": 4.7e-05
+    },
+    "price_after_discount": {
+      "importance": 8.6e-05,
+      "std": 0.000289
+    },
+    "age_group_26-40": {
+      "importance": 5.4e-05,
+      "std": 4.1e-05
+    },
+    "product_category_toys": {
+      "importance": 2e-05,
+      "std": 0.000585
+    },
+    "payment_method_credit_card": {
+      "importance": 1.2e-05,
+      "std": 8e-05
+    },
+    "age_group_41-60": {
+      "importance": 7e-06,
+      "std": 1.6e-05
+    },
+    "is_late_delivery": {
+      "importance": 0.0,
+      "std": 0.0
+    },
+    "high_return_customer": {
+      "importance": 0.0,
+      "std": 0.0
+    },
+    "device_type_tablet": {
+      "importance": 0.0,
+      "std": 0.0
+    },
+    "log_price": {
+      "importance": 0.0,
+      "std": 0.0
+    },
+    "age_group_60+": {
+      "importance": 0.0,
+      "std": 0.0
+    },
+    "age_group_le_25": {
+      "importance": 0.0,
+      "std": 0.0
+    },
+    "shipping_method_standard": {
+      "importance": -3.8e-05,
+      "std": 0.000178
+    },
+    "discount_percent": {
+      "importance": -0.000257,
+      "std": 0.00063
+    },
+    "product_category_beauty": {
+      "importance": -0.000327,
+      "std": 0.00013
+    }
+  },
+  "shap_mean_abs": {
+    "shipping_method_express": 0.10635100305080414,
+    "used_coupon": 0.10470300167798996,
+    "past_purchase_count": 0.0618089996278286,
+    "payment_method_apple_pay": 0.06155399978160858,
+    "product_category_electronics": 0.0586250014603138,
+    "device_type_mobile": 0.05621299892663956,
+    "delivery_delay_days": 0.043884001672267914,
+    "product_category_clothing": 0.04001399874687195,
+    "device_type_desktop": 0.03879399970173836,
+    "product_price": 0.032965999096632004,
+    "product_category_toys": 0.023540999740362167,
+    "payment_method_debit_card": 0.023211000487208366,
+    "product_category_home": 0.02097800001502037,
+    "discount_percent": 0.014917000196874142,
+    "past_return_rate": 0.012934999540448189,
+    "session_length_minutes": 0.012184999883174896,
+    "product_category_sports": 0.009850000031292439,
+    "price_after_discount": 0.009157000109553337,
+    "num_product_views": 0.008724999614059925,
+    "product_category_beauty": 0.005758000072091818,
+    "shipping_method_same_day": 0.003829000052064657,
+    "shipping_method_standard": 0.003533999901264906,
+    "payment_method_paypal": 0.0027809999883174896,
+    "payment_method_credit_card": 0.0026569999754428864,
+    "customer_age": 0.0026149998884648085,
+    "views_per_minute": 0.002492999890819192,
+    "product_rating": 0.002136999974027276,
+    "expected_returns": 0.0013000000035390258,
+    "age_group_26-40": 0.00027200000477023423,
+    "age_group_41-60": 5.0999999075429514e-05,
+    "device_type_tablet": 0.0,
+    "log_price": 0.0,
+    "age_group_60+": 0.0,
+    "age_group_le_25": 0.0,
+    "is_late_delivery": 0.0,
+    "high_return_customer": 0.0
+  }
+}
