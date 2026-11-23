@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Return risk</title><link rel="stylesheet" href="style.css"></head><body>
+<aside><h1>Return risk</h1><p class="muted">Predict which orders are likely to be returned</p>
+<nav>
+<button data-p="predict">Predict an order</button>
+<button data-p="compare">Compare models</button>
+<button data-p="detail">Model details</button>
+<button data-p="explain">What drives returns</button>
+<button data-p="insights">Data insights</button>
+<button data-p="workflow">How it was built</button>
+</nav></aside>
+<main>
+<section id="predict" hidden><h2>Predict an order</h2>
+<div class="split"><form id="f" class="panel"></form>
+<div id="out" class="panel"><p class="muted">Fill in the order and select Predict to see its return risk.</p></div></div></section>
+
+<section id="compare" hidden><h2>Compare models</h2>
+<div class="panel wide"><table id="tbl"></table></div>
+<div class="grid2"><div class="panel"><h3>ROC-AUC: train vs test</h3><p class="muted">A big gap means the model memorized the training data.</p><canvas id="c1"></canvas></div>
+<div class="panel"><h3>Test accuracy, precision, recall, F1</h3><canvas id="c2"></canvas></div></div></section>
+
+<section id="detail" hidden><h2>Model details</h2>
+<label class="inline">Model <select id="dm"></select></label>
+<div id="cards" class="cards"></div>
+<div class="grid2"><div class="panel"><h3>ROC curve</h3><canvas id="c3"></canvas></div>
+<div class="panel"><h3>Confusion matrix (test set)</h3><div id="cm"></div><h3>Settings</h3><dl id="params"></dl></div></div></section>
+
+<section id="explain" hidden><h2>What drives returns</h2>
+<div class="grid2"><div class="panel"><h3>Permutation importance</h3><p class="muted">How much the score drops when a feature is shuffled.</p><canvas id="c4"></canvas></div>
+<div class="panel"><h3>SHAP importance</h3><p class="muted">Average effect of each feature on the prediction.</p><canvas id="c5"></canvas><p id="noshap" class="muted" hidden>SHAP was not installed when the notebook ran.</p></div></div></section>
+
+<section id="insights" hidden><h2>Data insights</h2>
+<div id="stats" class="cards"></div>
+<div class="grid2"><div class="panel"><h3>Returned vs not returned</h3><canvas id="c6"></canvas></div>
+<div class="panel"><h3>Return rate by <select id="rf"></select></h3><canvas id="c7"></canvas></div></div>
+<div class="grid2"><div class="panel"><h3>Correlation with returned</h3><p class="muted">All weak: no single feature decides a return.</p><canvas id="c8"></canvas></div>
+<div class="panel"><h3>Impossible values found</h3><div id="bad"></div></div></div></section>
+
+<section id="workflow" hidden><h2>How it was built</h2><ol id="steps" class="steps"></ol></section>
+</main>
+<script src="chart.umd.js"></script><script src="app.js"></script></body></html>
