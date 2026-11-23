@@ -4,5 +4,9 @@ pandas
 numpy
 scikit-learn
 xgboost
-joblib
 shap
+joblib
+matplotlib
+seaborn
+jupyter
+httpx
